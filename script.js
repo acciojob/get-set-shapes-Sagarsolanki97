@@ -1,7 +1,14 @@
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
+
+function shape(width,height){
+	this.width = width;
+	this.height = heigth;
+}
+
+
+const Rectangle extends shape = new shape() {
+ getWidth();
+	getHeight();
+	getArea();
     }
 
     get getWidth() {
