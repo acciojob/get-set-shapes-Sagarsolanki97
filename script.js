@@ -1,8 +1,10 @@
 
 function shape(width,height){
-	this.width = width;
-	this.height = heigth;
-}
+	constructor(width,heigth)
+	{this.width = width;
+	this.height = heigth;}
+	
+};
 
 
 const Rectangle extends shape = new shape() {
