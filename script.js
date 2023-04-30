@@ -1,37 +1,31 @@
+class Shape {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+}
 
-function shape(width,height){
-	constructor(width,heigth)
-	{this.width = width;
-	this.height = heigth;}
-	
-};
+class Rectangle extends Shape {
+  getWidth() {
+    return this.width;
+  }
 
+  getHeight() {
+    return this.height;
+  }
 
-const Rectangle extends shape = new shape() {
- getWidth();
-	getHeight();
-	getArea();
-    }
-
-    get getWidth() {
-        return this.width;
-    }
-
-    get getHeight() {
-        return this.height;
-    }
-
-    getArea() {
-        return this.width * this.height;
-    }
+  getArea() {
+    return this.width * this.height;
+  }
 }
 
 class Square extends Rectangle {
-    constructor(side) {
-        super(side, side);
-    }
+  constructor(side) {
+    super(side, side);
+  }
 
-    getPerimeter() {
-        return 4 * this.width;
-    }
+  getPerimeter() {
+    return 4 * this.width;
+  }
 }
+
